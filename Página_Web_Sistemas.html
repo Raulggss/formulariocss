@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table, th, td{
+border: 1px solid crimson;
+background-color:rgb(255, 255, 255);
+}
+label {
+    color: red;
+}
+.button_blue{
+    color: blue;
+}
+.submit_green{
+   background-color: rgb(31, 143, 3); color:rgb(119, 236, 151)"
+}
+</style>
+</head>
+
+<body>
+<table style="width:50%">
+
+<form method="POST" action="http://formadorestic.com/alumnosdaw/procesaformulario.php">
+<tr>
+<th colspan="2" style="background-color: rgb(247, 238, 162);"><label for="campo_name"><h1 style="font-size:300%;"><p style="color: crimson;" >Formulario De Usuario</p></h1></label></th>
+</tr>
+
+<tr>
+<td style="background-color: cyan;"><label for="campo_nombre">    Introducir Nombre: </label></td>
+<td style="background-color: cyan;"><input type="text" id="campo_nombre" name="nombre" placeholder="Introduzca su nombre completo aquí"></td>
+</tr>
+<tr>
+<td style="background-color: cyan;"><label for="campo_password">    Introducir Contraseña: </label></td>
+<td style="background-color: cyan;"><input type="password" id="campo_password" name="password" placeholder="Introduzca su contraseña aquí"></td>
+</tr>
+<tr>
+<td style="background-color: cyan;"><label for="campo_dirección">     Introducir Comentario: </label></td>
+<td style="background-color: cyan;"><textarea name="direccion" form="dirección" id="campo_dirección" placeholder="Introzuca su comentario aquí"></textarea></td>
+</tr>
+
+<tr>
+<td style="background-color: cyan;"><label for="campo_deportes">    Seleccione los deportes:</label></td>
+<td style="background-color: cyan;"><input type="checkbox" id="game1" name="game1" value="hockey">
+<label for="game1">Hockey</label><br>
+<input type="checkbox" id="game2" name="game2" value="football">
+<label for="game2">Football</label><br>
+<input type="checkbox" id="game3" name="game3" value="badminton">
+<label for="game3">Badminton</label><br>
+<input type="checkbox" id="game4" name="game4" value="cricket">
+<label for="game4">Cricket</label><br>
+<input type="checkbox" id="game5" name="game5" value="volleyball">
+<label for="game5">Volleyball</label>
+</tr>
+
+<tr>
+<td style="background-color: cyan;"><label for="campo_sexo">  Género:</label></td>
+<td style="background-color: cyan;"><input type="radio" id="male" name="sexo" value="male">
+<label for="male">Hombre</label><br>
+<input type="radio" id="female" name="sexo" value="female">
+<label for="female">Mujer</label><br>
+<input type="radio" id="nobinario" name="sexo" value="nobinario">
+<label for="nobinario">Prefiero no contestar</label>
+</tr> 
+
+<tr>
+<td style="background-color: cyan;"><label for="campo_edad">    Seleccione se edad: </label></td>
+<td style="background-color: cyan;"><select id="edad" name="edad" placeholder="seleccione">
+<option value="select">Seleccione edad...</option>
+<option value="20">20</option>
+<option value="21">21</option>
+<option value="22">22</option>
+<option value="mas22">Más de 22</option>
+</select>
+</tr>
+
+<tr>
+<td colspan="2" style="background-color: cyan;"><label for="examinar"></label>
+<input type="file" id="examinar" name="examinar">
+</tr>
+
+<tr>
+<td style="background-color: cyan;" colspan="2"><input class="button_blue" type="button" onclick="alert('RELLENA EL FORMULARIO')" value="Haz click aquí!  " style="font-size:27px;">   
+<input type="reset" value="Reset    " style="font-size: 27px;"> 
+<input class="submit_green" type="submit" value="Entregar Formulario " style="font-size:27px;">   
+</tr>
+</form>
+</table>
+</body>
+</html>
